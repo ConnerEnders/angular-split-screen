@@ -1,0 +1,26 @@
+<clr-header class="header-6">
+  <div class="branding">
+    <a routerLink="" class="nav-link">
+    <clr-icon shape="cog" class="is-warning"></clr-icon>
+    <span class="title">Split Screen Demo</span>
+    </a>
+  </div>
+  <div class="header-actions" *ngIf="nav.showHeaderActions">
+    <clr-tooltip>
+      <a class="nav-link nav-icon" (click)="nav.toggleSplitView()">
+        <clr-icon clrTooltipTrigger shape="paste"></clr-icon>
+        <clr-tooltip-content clrPosition="bottom-left" clrSize="sm" *clrIfOpen>
+          <span>Split View</span>
+        </clr-tooltip-content>
+      </a>
+    </clr-tooltip>
+    <clr-tooltip>
+      <a class="nav-link nav-icon" (click)="auth.logout()">
+        <clr-icon clrTooltipTrigger shape="logout"></clr-icon>
+        <clr-tooltip-content clrPosition="bottom-left" clrSize="sm" *clrIfOpen>
+          <span>Log Out</span>
+        </clr-tooltip-content>
+      </a>
+    </clr-tooltip>
+  </div>
+</clr-header>

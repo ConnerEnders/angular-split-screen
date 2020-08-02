@@ -1,0 +1,129 @@
+<a clrVerticalNavLink
+  routerLink=".."
+  queryParamsHandling="merge">
+  Portals
+  <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+</a>
+<clr-vertical-nav-group>
+  Portfolio
+  <clr-icon clrVerticalNavIcon shape="building"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      [routerLink]="['..', '0000', 'overview']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Portfolio
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['..', '1234', 'overview']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Portal 1234
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['..', '5678', 'overview']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Portal 5678
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['..', '4321', 'overview']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Portal 4321
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>
+
+<div class="nav-divider"></div>
+
+<a clrVerticalNavLink
+  routerLink="overview"
+  routerLinkActive="active"
+  queryParamsHandling="merge">
+  Overview
+  <clr-icon clrVerticalNavIcon shape="eye"></clr-icon>
+</a>
+<clr-vertical-nav-group routerLinkActive="active">
+  Logs
+  <clr-icon clrVerticalNavIcon shape="checkbox-list"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      routerLink="logs"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      queryParamsHandling="merge">
+      All Logs
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['logs', 'abcd']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Log abcd
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['logs', 'edgh']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Log edgh
+    </a>
+    <a clrVerticalNavLink
+      [routerLink]="['logs', 'ijkl']"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Log ijkl
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>
+
+<div class="nav-divider"></div>
+
+<clr-vertical-nav-group routerLinkActive="active">
+  Library
+  <clr-icon clrVerticalNavIcon shape="book"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      routerLink="../../library"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Components
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../../library"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Metrics
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../../library"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Schedules
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>
+
+<clr-vertical-nav-group routerLinkActive="active">
+  Settings
+  <clr-icon clrVerticalNavIcon shape="cog"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      routerLink="../../settings"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Notifications
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../../settings"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Users
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../../settings"
+      routerLinkActive="active"
+      queryParamsHandling="merge">
+      Companies
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>

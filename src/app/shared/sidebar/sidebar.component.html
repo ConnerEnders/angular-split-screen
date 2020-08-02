@@ -1,0 +1,53 @@
+<a clrVerticalNavLink
+  routerLink="../portals"
+  routerLinkActive="active"
+  queryParamsHandling="merge">
+  Portals
+  <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+</a>
+
+<div class="nav-divider"></div>
+
+<clr-vertical-nav-group routerLinkActive="active">
+  Library
+  <clr-icon clrVerticalNavIcon shape="book"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      routerLink="../library"
+      queryParamsHandling="merge">
+      Components
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../library"
+      queryParamsHandling="merge">
+      Metrics
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../library"
+      queryParamsHandling="merge">
+      Schedules
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>
+
+<clr-vertical-nav-group routerLinkActive="active">
+  Settings
+  <clr-icon clrVerticalNavIcon shape="cog"></clr-icon>
+  <clr-vertical-nav-group-children>
+    <a clrVerticalNavLink
+      routerLink="../settings"
+      queryParamsHandling="merge">
+      Notifications
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../settings"
+      queryParamsHandling="merge">
+      Users
+    </a>
+    <a clrVerticalNavLink
+      routerLink="../settings"
+      queryParamsHandling="merge">
+      Companies
+    </a>
+  </clr-vertical-nav-group-children>
+</clr-vertical-nav-group>

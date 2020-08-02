@@ -1,0 +1,18 @@
+<div class="content-container" style="height: 100%">
+  <clr-vertical-nav [clr-nav-level]="1"
+    [clrVerticalNavCollapsible]="true"
+    class="nav-trigger--bottom"
+    *ngIf="!isSecondaryOutlet">
+    <app-sidebar *ngIf="!portalSidebar"></app-sidebar>
+    <app-portal-sidebar *ngIf="portalSidebar"></app-portal-sidebar>
+  </clr-vertical-nav>
+  <clr-vertical-nav [clrVerticalNavCollapsible]="true"
+    class="nav-trigger--bottom"
+    *ngIf="isSecondaryOutlet">
+    <app-sidebar *ngIf="!portalSidebar"></app-sidebar>
+    <app-portal-sidebar *ngIf="portalSidebar"></app-portal-sidebar>
+  </clr-vertical-nav>
+  <div class="content-area">
+    <ng-content></ng-content>
+  </div>
+</div>

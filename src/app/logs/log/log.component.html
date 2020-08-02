@@ -1,0 +1,22 @@
+<h1>Log: {{ logID }}</h1>
+
+<a routerLink="."
+  [queryParams]="{ status: 'open' }"
+  queryParamsHandling="merge">
+  Open
+</a>
+<br>
+<a routerLink="."
+  [queryParams]="{ status: 'closed' }"
+  queryParamsHandling="merge">
+  Closed
+</a>
+<br>
+<a routerLink="."
+  [queryParams]="{ status: ['closed', 'open'] }"
+  queryParamsHandling="merge">
+  Closed and Open
+</a>
+<br>
+<br>
+Status: {{ status }}
